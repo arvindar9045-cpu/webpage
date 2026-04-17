@@ -8,9 +8,7 @@ body {
   font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 28%),
-    linear-gradient(135deg, #dbeafe 0%, #eff6ff 45%, #e0f2fe 100%);
+  background: #0F172A;
 }
 
 header {
@@ -82,5 +80,31 @@ main {
   nav a {
     flex: 1 1 140px;
     min-width: 0;
+  }
+}
+
+/* Background scrolling name */
+body.has-scrolling-name::before {
+  content: attr(data-page);
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 30vw;
+  font-weight: 900;
+  color: #ffffff;
+  white-space: nowrap;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+  animation: scrollName 13.3s linear infinite;
+}
+
+@keyframes scrollName {
+  0% {
+    transform: translateY(-50%) translateX(100vw);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-100%);
   }
 }
