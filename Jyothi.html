@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Internship Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .poster-container {
+            height: 740px;
+            width: 500px;
+            margin: 0 auto;
+            background-image: url("images/jyothiimg/bgimage.jpeg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .top-text {
+            margin-top: 35px;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .top-text span.bold {
+            font-weight: 900;
+        }
+
+        .title-section {
+            margin-top: 60px;
+            /* Adjust this value if it overlays characters */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1;
+            margin: 0;
+            text-transform: uppercase;
+            text-shadow:
+                0 0 5px rgba(255, 255, 255, 0.8),
+                0 0 15px #a855f7,
+                0 0 25px #a855f7;
+        }
+
+        .program-badge {
+            margin-top: 12px;
+            padding: 4px 24px;
+            border: 1px solid #d946ef;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            color: gold;
+            background: rgba(15, 5, 30, 0.7);
+            text-shadow: 0 0 8px #d946ef;
+            box-shadow: 0 0 12px rgba(217, 70, 239, 0.5), inset 0 0 12px rgba(217, 70, 239, 0.5);
+        }
+
+        .skills-text {
+            font-size: 10px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.8px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+            text-align: center;
+            z-index: 10;
+            background-color: #17042a;
+            height: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .join-btn-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 2px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #9333ea, #ec4899);
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+
+        }
+
+        .join-btn {
+            display: block;
+            padding: 8px 25px;
+            background-color: #17042a;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .join-btn-inner {
+            display: block;
+
+        }
+
+        .join-btn span.small {
+            font-size: 22px;
+            display: block;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 2px;
+        }
+
+        .join-btn span.large {
+            font-size: 24px;
+            font-weight: 900;
+            display: block;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+
+        /* The spacer pushes everything below it to the bottom of the container */
+        .spacer {
+            flex-grow: 1;
+        }
+
+        /* Bottom Section Styling */
+        .bottom-bar {
+            width: 100%;
+            background: linear-gradient(90deg, rgba(23, 8, 48, 0.95), rgba(70, 18, 124, 0.85), rgba(23, 8, 48, 0.95));
+            border-top: 1px solid rgba(217, 70, 239, 0.3);
+            border-bottom: 1px solid rgba(217, 70, 239, 0.3);
+            display: flex;
+            justify-content: space-evenly;
+            padding: 12px 5px;
+            margin-bottom: 15px;
+            /* Spaces out from URL */
+            box-sizing: border-box;
+            z-index: 10;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Icon Colors Matching Poster */
+        .info-item:nth-child(1) .icon-box {
+            color: #fde047;
+            /* Yellow */
+            border-color: rgba(253, 224, 71, 0.4);
+            box-shadow: 0 0 10px rgba(253, 224, 71, 0.2);
+        }
+
+        .info-item:nth-child(2) .icon-box {
+            color: #22d3ee;
+            /* Cyan */
+            border-color: rgba(34, 211, 238, 0.4);
+            box-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
+        }
+
+        .info-item:nth-child(3) .icon-box {
+            color: #f472b6;
+            /* Pink */
+            border-color: rgba(244, 114, 182, 0.4);
+            box-shadow: 0 0 10px rgba(244, 114, 182, 0.2);
+        }
+
+        .info-text {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 1.3;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+        }
+
+        .footer-url {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            z-index: 10;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Dinesh.html">Dinesh</a>
+            <a href="Jyothi.html">Jyothi</a>
+            <a href="Santhosh.html">Santhosh</a>
+            <a href="Satish.html">Satish</a>
+        </nav>
+    </header>
+
+    <div class="poster-container">
+
+        <div class="top-text">
+            <span class="bold">DILSHAJ INFOTECH</span> PRESENTS
+        </div>
+
+        <div class="title-section">
+            <h1>VIRTUAL<br>INTERNSHIP</h1>
+            <div class="program-badge">PROGRAM</div>
+        </div>
+
+        <div class="skills-text">
+            GAIN REMOTE EXPERIENCE &bull; DEVELOP DIGITAL SKILLS &bull; ADVANCE YOUR CAREER.
+        </div>
+
+        <div class="join-btn-wrapper">
+            <a href="#" class="join-btn">
+                <div class="join-btn-inner">
+                    <span class="small">-JOIN OUR-</span>
+                    <span class="large">INTERNSHIP!</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Space left open so the characters in your background image can be seen clearly -->
+        <div class="spacer"></div>
+
+        <div class="bottom-bar">
+            <div class="info-item">
+                <div class="icon-box"><i class="fas fa-envelope-open-text"></i></div>
+                <div class="info-text">
+                    <span>CERTIFICATE</span>
+                    <span>PROVIDED</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon-box"><i class="fas fa-wifi"></i></div>
+                <div class="info-text">
+                    <span>REMOTE</span>
+                    <span>TRAINING</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
+                <div class="info-text">
+                    <span>LIMITED SPOTS</span>
+                    <span>AVAILABLE</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-url">
+            www.dilshajinfotech.com
+        </div>
+
+    </div>
+
+</body>
+
+</html>
