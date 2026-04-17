@@ -4,14 +4,16 @@ html, body {
 }
 
 .bg {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 800px;
     background-image: url("../images/santhoshimg/bg-1.jpeg");
     background-size: cover;
     background-position: calc(100% - 0px ) calc(80% - 100px);
     background-repeat: no-repeat;
-    margin-left: 30%;
-    margin-top: 20px;
+    margin: 20px auto;
+    border-radius: 24px;
+    overflow: hidden;
 }
 .txt{
     color: white;
@@ -101,4 +103,54 @@ html, body {
     width: 250px;
     height: 50px;
     margin-left: 25%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .bg {
+        height: auto;
+        min-height: 800px;
+    }
+    h3.subtitle {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    .txt {
+        margin-left: 0;
+        text-align: center;
+        font-size: 40px;
+    }
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 30px;
+    }
+    .pg {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        font-size: 24px;
+    }
+    .tag {
+        width: 100%;
+        height: auto;
+        padding: 5px 0;
+    }
+    .tag h4 {
+        font-size: 11px;
+        text-align: center;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .join {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .int {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 24px;
+    }
 }

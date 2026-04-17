@@ -23,7 +23,8 @@
 
         .poster-container {
             height: 740px;
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
             margin: 0 auto;
             background-image: url("images/jyothiimg/bgimage.jpeg");
             background-size: cover;
@@ -37,6 +38,7 @@
             overflow: hidden;
             box-sizing: border-box;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            border-radius: 24px;
         }
 
         .top-text {
@@ -221,6 +223,46 @@
             letter-spacing: 1px;
             z-index: 10;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 500px) {
+            .poster-container {
+                height: auto;
+                min-height: 740px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            .skills-text {
+                font-size: 8px;
+                padding: 5px 10px;
+                height: auto;
+                line-height: 1.4;
+            }
+            .bottom-bar {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 28px;
+            }
+            .program-badge {
+                font-size: 12px;
+                letter-spacing: 3px;
+            }
+            .join-btn span.large {
+                font-size: 20px;
+            }
+            .join-btn span.small {
+                font-size: 18px;
+            }
+            .top-text {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
