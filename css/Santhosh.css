@@ -4,9 +4,10 @@ html, body {
 }
 
 .bg {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 500px;
-    height: 800px;
+    aspect-ratio: 5 / 8;
+    height: auto;
     background-image: url("../images/santhoshimg/bg-1.jpeg");
     background-size: cover;
     background-position: calc(100% - 0px ) calc(80% - 100px);
@@ -109,48 +110,59 @@ html, body {
 @media (max-width: 500px) {
     .bg {
         height: auto;
-        min-height: 800px;
+        min-height: auto;
     }
     h3.subtitle {
         margin-left: 0 !important;
         text-align: center;
+        padding-top: 4vw !important;
+        font-size: 4vw;
     }
     .txt {
         margin-left: 0;
         text-align: center;
-        font-size: 40px;
+        font-size: 10vw;
     }
     .main {
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
-        font-size: 30px;
+        width: 60vw;
+        font-size: 7.4vw;
+        margin-top: -1.6vw;
     }
     .pg {
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
-        font-size: 24px;
+        width: 40vw;
+        height: 10vw;
+        font-size: 6vw;
     }
     .tag {
         width: 100%;
-        height: auto;
-        padding: 5px 0;
+        height: 6vw;
+        margin-top: 4vw;
+        font-size: 3vw;
+        padding: 0;
     }
     .tag h4 {
-        font-size: 11px;
+        font-size: 2.2vw;
         text-align: center;
         margin: 0;
-        padding: 0 10px;
+        padding: 0 2vw;
     }
     .join {
         margin-left: auto;
         margin-right: auto;
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+        margin-top: 4vw;
     }
     .int {
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
-        font-size: 24px;
+        width: 50vw;
+        height: 10vw;
+        font-size: 6vw;
     }
 }

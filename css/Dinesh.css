@@ -11,8 +11,8 @@
 
 .dinesh-page .poster-container {
   max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
+  width: calc(100% - 40px);
+  margin: 20px auto;
   background:
     radial-gradient(circle at 20% 18%, rgba(103, 246, 255, 0.22), transparent 26%),
     radial-gradient(circle at 82% 16%, rgba(167, 139, 250, 0.24), transparent 24%),
@@ -21,7 +21,8 @@
   background-size: auto, auto, auto, cover;
   background-position: center, center, center, center bottom;
   background-repeat: no-repeat;
-  height: 900px;
+  aspect-ratio: 2 / 3;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -302,49 +303,67 @@
 @media (max-width: 600px) {
   .dinesh-page .poster-container {
     height: auto;
-    min-height: 900px;
+    min-height: auto;
   }
-  .dinesh-page .virtual {
-    font-size: 4rem;
+  .dinesh-page .poster-content {
+    padding-top: 5vw;
   }
-  .dinesh-page .internship-box {
-    font-size: 2.5rem;
-  }
-  .dinesh-page .program-box {
-    font-size: 1.8rem;
-  }
-  .dinesh-page .experience-bar {
-    font-size: 0.8rem;
-  }
-  .dinesh-page .join {
-    font-size: 1.5rem;
-    margin: 0 10px;
-  }
-  .dinesh-page .vert-box {
-    font-size: 1.1rem;
-    padding: 8px 20px;
-  }
-  .dinesh-page .footer-banner {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  .dinesh-page .divider {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .dinesh-page .virtual {
-    font-size: 3rem;
-  }
-  .dinesh-page .internship-box {
-    font-size: 2rem;
-  }
-  .dinesh-page .program-box {
-    font-size: 1.4rem;
+  .dinesh-page .title-stack {
+    margin-bottom: -11.6vw;
   }
   .dinesh-page .heading {
-    font-size: 1.2rem;
+    font-size: 4vw;
+    margin-bottom: 0.8vw;
+  }
+  .dinesh-page .virtual {
+    font-size: 14.6vw;
+    margin: 0 0 -0.8vw 0;
+  }
+  .dinesh-page .internship-box {
+    font-size: 9.3vw;
+    padding: 0.8vw 4vw;
+    margin-bottom: -0.8vw;
+  }
+  .dinesh-page .program-box {
+    font-size: 5.8vw;
+    padding: 0.8vw 5vw;
+    margin-bottom: 4vw;
+  }
+  .dinesh-page .experience-bar {
+    font-size: 2.5vw;
+    padding: 1.3vw 0;
+    margin-bottom: 4vw;
+  }
+  .dinesh-page .join-wrapper {
+    margin-bottom: 2.5vw;
+  }
+  .dinesh-page .join {
+    font-size: 5.3vw;
+    margin: 0 3.3vw;
+  }
+  .dinesh-page .vert-box {
+    font-size: 3.4vw;
+    padding: 1.6vw 5vw;
+  }
+  .dinesh-page .footer-banner {
+    padding: 2.5vw 3.3vw;
+  }
+  .dinesh-page .feature-item {
+    gap: 2vw;
+  }
+  .dinesh-page .feature-item p {
+    font-size: 2vw;
+  }
+  .dinesh-page .icon-wrapper {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+  .dinesh-page .divider {
+    height: 5vw;
+    display: block;
+  }
+  .dinesh-page .footer-url {
+    font-size: 2.6vw;
+    padding: 1.6vw 0;
   }
 }

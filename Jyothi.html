@@ -22,10 +22,11 @@
         }
 
         .poster-container {
-            height: 740px;
-            width: 100%;
+            aspect-ratio: 50 / 74;
+            height: auto;
+            width: calc(100% - 40px);
             max-width: 500px;
-            margin: 0 auto;
+            margin: 20px auto;
             background-image: url("images/jyothiimg/bgimage.jpeg");
             background-size: cover;
             background-position: center;
@@ -229,39 +230,64 @@
         @media (max-width: 500px) {
             .poster-container {
                 height: auto;
-                min-height: 740px;
-            }
-            h1 {
-                font-size: 36px;
-            }
-            .skills-text {
-                font-size: 8px;
-                padding: 5px 10px;
-                height: auto;
-                line-height: 1.4;
-            }
-            .bottom-bar {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-        }
-
-        @media (max-width: 400px) {
-            h1 {
-                font-size: 28px;
-            }
-            .program-badge {
-                font-size: 12px;
-                letter-spacing: 3px;
-            }
-            .join-btn span.large {
-                font-size: 20px;
-            }
-            .join-btn span.small {
-                font-size: 18px;
+                min-height: auto;
             }
             .top-text {
-                font-size: 14px;
+                margin-top: 7vw;
+                font-size: 3.6vw;
+            }
+            .title-section {
+                margin-top: 12vw;
+            }
+            h1 {
+                font-size: 9.6vw;
+            }
+            .program-badge {
+                margin-top: 2.4vw;
+                padding: 0.8vw 4.8vw;
+                font-size: 2.8vw;
+                border-radius: 4vw;
+            }
+            .skills-text {
+                font-size: 2vw;
+                margin-top: 4vw;
+                margin-bottom: 4vw;
+                height: 4vw;
+            }
+            .join-btn-wrapper {
+                padding: 0.4vw;
+                border-radius: 2vw;
+            }
+            .join-btn {
+                padding: 1.6vw 5vw;
+                border-radius: 1.6vw;
+            }
+            .join-btn span.small {
+                font-size: 4.4vw;
+                margin-bottom: 0.4vw;
+            }
+            .join-btn span.large {
+                font-size: 4.8vw;
+            }
+            .bottom-bar {
+                padding: 2.4vw 1vw;
+                margin-bottom: 3vw;
+                gap: 2vw;
+            }
+            .info-item {
+                gap: 1.6vw;
+            }
+            .icon-box {
+                width: 10vw;
+                height: 10vw;
+                border-radius: 1.2vw;
+            }
+            .info-text {
+                font-size: 2vw;
+            }
+            .footer-url {
+                font-size: 2.6vw;
+                margin-bottom: 3vw;
             }
         }
     </style>
