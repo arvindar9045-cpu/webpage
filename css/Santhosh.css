@@ -5,12 +5,12 @@ html, body {
 
 .bg {
     width: calc(100% - 40px);
-    max-width: 500px;
+    max-width: 700px;
     aspect-ratio: 5 / 8;
     height: auto;
     background-image: url("../images/santhoshimg/bg-1.jpeg");
     background-size: cover;
-    background-position: calc(100% - 0px ) calc(80% - 100px);
+    background-position: calc(100% - 0px ) calc(80% - 140px);
     background-repeat: no-repeat;
     margin: 20px auto;
     border-radius: 24px;
@@ -18,7 +18,7 @@ html, body {
 }
 .txt{
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     margin-left: 22%;
     font-weight: 900;
     text-shadow: 0px 6px 8px rgba(0, 0, 0, 35);
@@ -28,7 +28,7 @@ html, body {
 }
 .main{
     display: flex;
-    font-size: 37px;
+    font-size: 52px;
    align-items: center;
    justify-content: center;
     font-weight: 900;
@@ -37,13 +37,13 @@ html, body {
     margin-top: -8px;
     color: #fff176;
     background: linear-gradient(#ff7a00,#ff3d00);
-    width: 300px;
+    width: 420px;
     margin-left: 19%;
 
 }
 .pg{
     display: flex;
-    font-size: 30px;
+    font-size: 42px;
    align-items: center;
    justify-content: center;
     font-weight: 900;
@@ -52,13 +52,13 @@ html, body {
     margin-top: -0px;
     color:white;
     background: linear-gradient(#ff7a00,#ff3d00);
-    width: 200px;
-    height: 50px;
+    width: 280px;
+    height: 70px;
     margin-left: 28%;
 }
 .tag{
     display: flex;
-    font-size: 15px;
+    font-size: 21px;
    align-items: center;
    justify-content: center;
     font-weight: 900;
@@ -66,25 +66,25 @@ html, body {
     font-family: poppins, sans-serif;
     margin-top: 20px;
     background: linear-gradient(#ff7a00,#ff3d00);
-    width: 500px;
-    height: 30px;
+    width: 100%;
+    height: 42px;
     opacity: 0.8;
     margin-left: 0%;
    
 }
 .join{
     display: flex;
-    font-size: 15px;
+    font-size: 21px;
    align-items: center;
    justify-content: center;
     font-weight: 900;
     text-shadow: 0px 6px 8px rgba(0, 0, 0, 35);
     font-family: poppins, sans-serif;
     background: linear-gradient(#ff7a00,#ff3d00);
-    width: 150px;
-    height: 40px;
+    width: 210px;
+    height: 56px;
     margin-top: 20px;
-   margin-left: 170px;
+   margin-left: 238px;
    opacity: 0.7;
    
   
@@ -92,7 +92,7 @@ html, body {
 }
 .int{
     display: flex;
-    font-size: 30px;
+    font-size: 42px;
    align-items: center;
    justify-content: center;
     font-weight: 900;
@@ -101,8 +101,8 @@ html, body {
    
     color:white;
     background: linear-gradient(#ff7a00,#ff3d00);
-    width: 250px;
-    height: 50px;
+    width: 350px;
+    height: 70px;
     margin-left: 25%;
 }
 
